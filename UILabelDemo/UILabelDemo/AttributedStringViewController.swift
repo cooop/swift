@@ -41,7 +41,7 @@ class AttributedStringViewController: UIViewController, UITableViewDelegate, UIT
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell: UITableViewCell = tableView.dequeueReusableCellWithIdentifier("UILabelDemoTableViewCell") ??
-            UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: "UILabelDemoTableViewCell")
+            UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "UILabelDemoTableViewCell")
         switch indexPath.row {
         case 0:
             cell.textLabel?.text = "Font & Color"
